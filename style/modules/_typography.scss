@@ -1,0 +1,19 @@
+.h2-text{
+    font-weight: 600;
+    font-size: adapt-vw(28, 48);
+    strong{
+        color: var(--main-color);
+        font-weight: inherit;
+    }
+}
+
+.h3-text{
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.h4-text{
+    font-weight: 500;
+    font-size: 22px;
+}

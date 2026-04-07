@@ -1,0 +1,38 @@
+@function to-vw($px, $base: 1440) {
+    @return ($px / $base) * 100vw;
+}
+
+@function adapt-vw($min-px, $max-px, $min-width: 402, $max-width: 1440) {
+    $slope: ($max-px - $min-px) / ($max-width - $min-width);
+    $y-axis-intersection: -$min-width * $slope + $min-px;
+
+    @return clamp(#{$min-px}px, #{$y-axis-intersection}px + #{$slope * 100}vw, #{$max-px}px);
+}
+
+@mixin if-parent($class) {
+    #{$class} & {
+        @content;
+    }
+}
+
+:root{
+    --main-color: #C2410C;
+    --main-dark-color: #A23A00;
+    --black-color: #1A1C1C;
+    --white-color: #FFFFFF;
+    --gray-color: #52525B;
+    --gray-bg-color: #F3F3F3;
+    --gray-dark-bg-color: #E2E2E2;
+
+    --spacing-60: #{adapt-vw(40, 60)};
+}
+
+.section-padding{
+    padding: adapt-vw(40, 60) 0;
+    &.pt-0{
+        padding-top: 0;
+    }
+    &.pb-0{
+        padding-bottom: 0;
+    }
+}

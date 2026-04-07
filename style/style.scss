@@ -1,0 +1,29 @@
+@import './common/reset';
+
+//Dependencies
+@import './common/var';
+@import './common/fonts';
+@import './common/swiper-bundle.min';
+
+//Main
+@import './common/general';
+@import './common/header';
+@import './common/footer';
+
+//Modules
+@import './modules/typography';
+@import './modules/btn';
+@import './modules/swiper-button';
+
+//Front
+@import './pages/front/hero';
+@import './pages/front/services';
+@import './pages/front/catalog-front';
+@import './pages/front/about-us';
+@import './pages/front/office-gallery';
+@import './pages/front/contacts';
+
+//Steps
+@import './pages/services/steps';
+@import './pages/services/variations';
+@import './pages/services/production-gallery';

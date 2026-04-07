@@ -1,0 +1,34 @@
+.production-gallery{
+    .container{
+        @media (max-width: 600px){
+            padding-right: 0;
+        }
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        @media (max-width: 600px){
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+    &__nav-wrapper{
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &::before{
+            content: "";
+            flex: 1 1 auto;
+            height: 1px;
+            background: var(--gray-dark-bg-color);
+        }
+    }
+    &__nav{
+        display: flex;
+        gap: 20px;
+    }
+}

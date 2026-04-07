@@ -1,0 +1,91 @@
+.about-us{
+    @media (max-width: 600px){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 48px;
+        strong{
+            display: block;
+            margin-top: 10px;
+            //Text
+            font-size: adapt-vw(28, 48);
+            font-weight: inherit;
+            color: var(--main-color);
+        }
+    }
+    &__inner{
+        display: flex;
+        gap: 20px;
+        @media (max-width: 1000px){
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    &__body{
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__dscr{
+        max-width: 546px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        //Text
+        line-height: 1.3;
+        color: var(--gray-color);
+    }
+    &__benefits{
+        margin-top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    &__benefits-item{
+        &-title{
+            font-weight: 600;
+            font-size: 36px;
+            text-transform: uppercase;
+            color: var(--main-color);
+        }
+        &-dscr{
+            font-size: 14px;
+            color: var(--gray-color);
+        }
+    }
+    &__items{
+        flex: 1 1 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__item{
+        flex: 1 1 calc((100% - 20px) / 2);
+        min-height: 234px;
+        overflow: hidden;
+        border-radius: 8px 0 0 8px;
+        background: var(--gray-bg-color);
+        padding: 20px;
+        border-left: 2px solid var(--main-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        @media (max-width: 500px){
+            flex: 1 1 100%;
+        }
+        &-icon{
+            width: 34px;
+        }
+        &-dscr{
+            font-size: 14px;
+            line-height: 1.3;
+            color: var(--gray-color);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.btn{
+    border-radius: 8px;
+    padding: 16px 32px;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: adapt-vw(8, 12);
+    transition: .3s ease;
+    //Text
+    font-weight: 600;
+    font-size: adapt-vw(12, 14);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white-color);
+    @media (any-hover: hover){
+        &:hover{
+            background: var(--main-dark-color);
+        }
+    }
+}
+
+.btn svg{
+    flex-shrink: 0;
+}

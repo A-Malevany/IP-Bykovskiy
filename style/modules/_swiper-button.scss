@@ -1,0 +1,14 @@
+.swiper-button-prev, .swiper-button-next{
+    all: unset;
+    cursor: pointer;
+    @media (any-hover: hover){
+        &:hover{
+            svg path{
+                fill: var(--main-color);
+            }
+        }
+    }
+    svg * {
+        transition: .3s ease;
+    }
+}
