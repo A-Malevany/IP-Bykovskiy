@@ -3,11 +3,12 @@
     padding: 16px 32px;
     background: var(--main-color);
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: adapt-vw(8, 12);
     transition: .3s ease;
     //Text
-    font-weight: 600;
+    font-weight: 500;
     font-size: adapt-vw(12, 14);
     text-transform: uppercase;
     text-align: center;

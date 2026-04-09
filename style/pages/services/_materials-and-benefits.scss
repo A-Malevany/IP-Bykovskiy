@@ -1,0 +1,40 @@
+.materials-and-benefits{
+    .benefits-services, .materials{
+        padding: 0;
+        .container{
+            padding: 0;
+            max-width: 100%;
+        }
+    }
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+        gap: 20px;
+        @media (max-width: 1270px){
+            grid-template-columns: repeat(1, minmax(auto, 1fr));
+        }
+    }
+    .benefits-services{
+        @media (max-width: 600px){
+            width: calc(100% + 40px);
+            margin: 0 -20px;
+        }
+        &__inner{
+            @media (max-width: 600px){
+                padding: 0 20px;
+            }
+        }
+        &__items{
+            grid-template-columns: repeat(1, minmax(auto, 1fr));
+        }
+    }
+    .materials{
+        @media (max-width: 600px){
+            width: calc(100% + 40px);
+            margin: 0 -20px;
+        }
+        &__item{
+            flex: 1 1 100%;
+        }
+    }
+}

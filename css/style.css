@@ -1279,13 +1279,16 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: clamp(8px, 6.450867052px + 0.3853564547vw, 12px);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  font-weight: 600;
+  font-weight: 500;
   font-size: clamp(12px, 11.225433526px + 0.1926782274vw, 14px);
   text-transform: uppercase;
   text-align: center;
@@ -2207,4 +2210,274 @@ main {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+
+.about-services__tag-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+.about-services__tag-section::before {
+  content: "";
+  width: 48px;
+  height: 2px;
+  background: var(--main-color);
+}
+.about-services__top {
+  margin: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 70px;
+}
+@media (max-width: 800px) {
+  .about-services__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+.about-services__dscr {
+  max-width: 960px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+@media (max-width: 1280px) {
+  .about-services__dscr {
+    font-size: 18px;
+  }
+}
+.about-services__btn {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 800px) {
+  .about-services__btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .materials .container {
+    padding: 0;
+  }
+}
+.materials__inner {
+  padding: 20px 40px;
+  background: var(--gray-bg-color);
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  .materials__inner {
+    padding: 20px;
+  }
+}
+.materials__tag-section {
+  display: block;
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+@media (max-width: 600px) {
+  .materials__tag-section {
+    margin-bottom: 20px;
+  }
+}
+.materials__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 25px;
+}
+.materials__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc((100% - 25px) / 2);
+          flex: 1 1 calc((100% - 25px) / 2);
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid var(--gray-dark-bg-color);
+}
+@media (max-width: 1100px) {
+  .materials__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    gap: 10px;
+  }
+}
+.materials__item-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+@media (max-width: 600px) {
+  .materials__item-info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 45%;
+            flex: 1 0 45%;
+  }
+}
+.materials__item-img {
+  width: 70px;
+}
+@media (max-width: 600px) {
+  .materials__item-img {
+    width: 40px;
+  }
+}
+.materials__item-title {
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .materials__item-title {
+    font-size: 18px;
+  }
+}
+.materials__item-dscr {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--gray-color);
+}
+
+@media (max-width: 600px) {
+  .benefits-services .container {
+    border-left: 2px solid var(--main-color);
+  }
+}
+.benefits-services__inner {
+  padding-left: 30px;
+  border-left: 2px solid var(--main-color);
+}
+@media (max-width: 600px) {
+  .benefits-services__inner {
+    padding-left: 0;
+    border: none;
+  }
+}
+.benefits-services__title {
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .benefits-services__title {
+    margin-bottom: 20px;
+  }
+}
+.benefits-services__items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  gap: 30px;
+}
+@media (max-width: 600px) {
+  .benefits-services__items {
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+  }
+}
+.benefits-services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+.benefits-services__item-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 24px;
+}
+.benefits-services__item-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+}
+.benefits-services__item-title {
+  font-weight: 500;
+  font-size: 14px;
+}
+.benefits-services__item-dscr {
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--gray-color);
+}
+
+.materials-and-benefits .benefits-services, .materials-and-benefits .materials {
+  padding: 0;
+}
+.materials-and-benefits .benefits-services .container, .materials-and-benefits .materials .container {
+  padding: 0;
+  max-width: 100%;
+}
+.materials-and-benefits__inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  gap: 20px;
+}
+@media (max-width: 1270px) {
+  .materials-and-benefits__inner {
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .materials-and-benefits .benefits-services {
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+  }
+}
+@media (max-width: 600px) {
+  .materials-and-benefits .benefits-services__inner {
+    padding: 0 20px;
+  }
+}
+.materials-and-benefits .benefits-services__items {
+  grid-template-columns: repeat(1, minmax(auto, 1fr));
+}
+@media (max-width: 600px) {
+  .materials-and-benefits .materials {
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+  }
+}
+.materials-and-benefits .materials__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
