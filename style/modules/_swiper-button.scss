@@ -1,6 +1,7 @@
 .swiper-button-prev, .swiper-button-next{
     all: unset;
     cursor: pointer;
+    transition: .3s ease;
     @media (any-hover: hover){
         &:hover{
             svg path{

@@ -54,9 +54,18 @@
         }
     }
     &__call{
+        transition: .3s ease;
+        //Text
         font-weight: 500;
         font-size: adapt-vw(16, 18);
         white-space: nowrap;
+        @media (any-hover: hover){
+            &:hover{
+                text-decoration: underline;
+                //Text
+                color: var(--main-color);
+            }
+        }
     }
     &__messenger{
         display: flex;
