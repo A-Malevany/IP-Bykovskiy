@@ -12,6 +12,9 @@
     &__img-main{
         position: relative;
         flex: 1 1 100%;
+        a{
+            display: block;
+        }
         img{
             border-radius: 8px;
             height: 100%;
@@ -22,8 +25,11 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        img{
+        a{
+            display: block;
             flex: 1 1 calc(50% - 10px);
+        }
+        img{
             border-radius: 8px;
         }
     }
